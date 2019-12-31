@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selected_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#1E1921"
+        android:text="text"
+        android:textColor="#A85E4F"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="top"
+        android:padding="5dip">
+
+        <com.example.carousel.controls.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationDuration="200"
+            pj:Items="@array/entries"
+            pj:Names="@array/names"
+            pj:SelectedItem="1"
+            pj:UseReflection="true" />
+    </LinearLayout>
+
+</LinearLayout>

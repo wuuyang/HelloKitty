@@ -1,1 +1,1 @@
-include ':app', ':topbar', ':textpoint', ':qr_code', ':database_helper'
+include ':app', ':topbar', ':textpoint', ':qr_code', ':database_helper', ':carousel'
