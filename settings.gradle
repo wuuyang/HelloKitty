@@ -1,1 +1,2 @@
 include ':app', ':topbar', ':textpoint', ':qr_code', ':database_helper', ':carousel'
+include ':kittylibrary'
